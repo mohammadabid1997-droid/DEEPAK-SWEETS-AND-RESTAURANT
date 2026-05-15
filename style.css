@@ -17,6 +17,7 @@ body{
 /* NAVBAR */
 
 .navbar{
+backdrop-filter:blur(10px);
   position:fixed;
   top:0;
   width:100%;
@@ -54,7 +55,7 @@ body{
 /* HERO */
 
 .hero{
-  height:100vh;
+  height:85vh;
 
   background:
   linear-gradient(
@@ -147,6 +148,7 @@ body{
 /* CARD */
 
 .card{
+box-shadow:0 0 20px rgba(0,0,0,0.4);
   background:#1c1c1c;
   border-radius:20px;
   overflow:hidden;
@@ -155,7 +157,7 @@ body{
 }
 
 .card:hover{
-  transform:translateY(-10px);
+ transform:scale(1.03);
 }
 
 .card img{

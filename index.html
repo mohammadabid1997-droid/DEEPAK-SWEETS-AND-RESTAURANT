@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Deepak Sweets</title>
+
+  <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+  <div class="logo">
+
+    <img src="./logo.png"
+         alt="Logo">
+
+  </div>
+
+  <ul>
+
+    <li><a href="#home">Home</a></li>
+
+    <li><a href="#menu">Menu</a></li>
+
+    <li><a href="#cart">Cart</a></li>
+
+  </ul>
+
+</nav>
+
+<!-- HERO -->
+
+<header class="hero" id="home">
+
+  <h1>Deepak Sweets & Restaurant</h1>
+
+  <p>
+    Delicious Food • Chinese • South Indian • Snacks
+  </p>
+
+  <button onclick="document.getElementById('menu').scrollIntoView()">
+    Explore Menu
+  </button>
+
+</header>
+
+<!-- MENU -->
+
+<section class="menu" id="menu">
+
+  <h2>Our Menu</h2>
+
+  <!-- CHINESE -->
+
+  <h3 class="category-title">
+    Chinese
+  </h3>
+
+  <div class="menu-container">
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200">
+
+      <div class="card-content">
+
+        <h3>Paneer Pizza</h3>
+
+        <p>Cheesy loaded paneer pizza</p>
+
+        <h4>₹270</h4>
+
+        <button onclick="addToCart('Paneer Pizza',270)">
+          Add To Cart
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=1200">
+
+      <div class="card-content">
+
+        <h3>Spring Roll</h3>
+
+        <p>Crispy chinese spring rolls</p>
+
+        <h4>₹110</h4>
+
+        <button onclick="addToCart('Spring Roll',110)">
+          Add To Cart
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=1200">
+
+      <div class="card-content">
+
+        <h3>Veg Noodles</h3>
+
+        <p>Chinese style hakka noodles</p>
+
+        <h4>₹90</h4>
+
+        <button onclick="addToCart('Veg Noodles',90)">
+          Add To Cart
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SOUTH INDIAN -->
+
+  <h3 class="category-title">
+    South Indian
+  </h3>
+
+  <div class="menu-container">
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?q=80&w=1200">
+
+      <div class="card-content">
+
+        <h3>Masala Dosa</h3>
+
+        <p>Crispy dosa with masala filling</p>
+
+        <h4>₹120</h4>
+
+        <button onclick="addToCart('Masala Dosa',120)">
+          Add To Cart
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1630383249896-424e482df921?q=80&w=1200">
+
+      <div class="card-content">
+
+        <h3>Idli Sambhar</h3>
+
+        <p>Soft idli served with sambhar</p>
+
+        <h4>₹80</h4>
+
+        <button onclick="addToCart('Idli Sambhar',80)">
+          Add To Cart
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CART -->
+
+<section class="cart-section"
+         id="cart">
+
+  <h2>Your Cart</h2>
+
+  <div id="cartItems"></div>
+
+  <h3 id="totalPrice">
+    Total: ₹0
+  </h3>
+
+  <input type="text"
+         id="customerName"
+         placeholder="Your Name">
+
+  <input type="text"
+         id="customerPhone"
+         placeholder="Phone Number">
+
+  <textarea id="customerAddress"
+            placeholder="Your Address"></textarea>
+
+  <button id="whatsappBtn">
+    Order On WhatsApp
+  </button>
+
+</section>
+
+<!-- FLOATING BUTTON -->
+
+<a href="https://wa.me/919812345678"
+   class="floating-whatsapp"
+   target="_blank">
+
+  WhatsApp
+
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
